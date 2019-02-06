@@ -46,7 +46,7 @@ def kotaChecker(namaKota):
     inputan = (idorang,idkota)
     kursor.execute(perintah,inputan)
     mydb.commit()
-    return "Kota "+namaKota," Sudah Terdaftar, id Kota: "+str(idkota)
+    return "Kota "+namaKota+" Sudah Terdaftar, id Kota: "+str(idkota)
   else:
     perintah = 'insert into kotax (nama) values (%s)'
     inputan = (namaKota, )
