@@ -29,7 +29,7 @@ def inputDataUser(nama, namaKota):
   inputan = (nama, )
   kursor.execute(perintah,inputan)
   mydb.commit()
-  return "id Anda: "+str(getIDOrangTerakhir())+" Nama Anda: "+nama+", "+str(kotaChecker(namaKota))
+  return "id Anda: "+str(getIDOrangTerakhir())+", nama Anda: "+nama+", "+str(kotaChecker(namaKota))
 
 def kotaChecker(namaKota):
   cekKota='select nama from kotax'
