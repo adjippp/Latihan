@@ -8,7 +8,7 @@ kota=[] ; th2015=[] ; th2016=[]
 plt.figure('3D Plotting',figsize=(10,5))
 custom=plt.subplot(111,projection='3d')
 def print3D():
-    data=open("Persentase Perokok RI.csv").read()
+    data=open("./Matplotlib Training/Persentase Perokok RI.csv").read()
     baris=data.split('\n')
     for isidata in baris:
         x,y,z=isidata.split(',')
